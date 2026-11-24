@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | CMI's Spices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement-bar">
+    <span>👩‍🍳 Delicious moments, unforgettable flavors</span>
+    <span class="announcement-right">Freshly prepared with love</span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top main-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" target="_blank" rel="noopener noreferrer">
+            <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" fill="#112240" stroke="#38bdf8" stroke-width="2.5"/>
+                <path d="M32 14C26 22 22 28 32 48C42 28 38 22 32 14Z" fill="#2563eb" stroke="#38bdf8" stroke-width="1.5"/>
+                <circle cx="32" cy="31" r="4" fill="#fbbf24"/>
+            </svg>
+            <span class="brand-text">
+                CMI's <strong>Spices</strong>
+                <small>TASTE THE GOOD LIFE</small>
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" id="menuToggle">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li><a class="nav-link" href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a class="nav-link" href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a></li>
+                <li><a class="nav-link" href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a class="nav-link active" href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a></li>
+                <li><a class="nav-link" href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+
+            <button class="cart-nav-btn" id="openCart">
+                <i class="bi bi-bag"></i>
+                <span>Cart</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <a href="menu.html" target="_blank" rel="noopener noreferrer" class="royal-btn nav-order-btn">Order Now</a>
+        </div>
+    </div>
+</nav>
+
+<header class="page-banner">
+    <div class="container">
+        <span class="section-tag">FOOD GALLERY</span>
+        <h1>Food That Looks <span>As Good As It Tastes</span></h1>
+        <p>A visual feast crafted inside the kitchen of CMI's Spices.</p>
+    </div>
+</header>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-large">
+                <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=85" alt="Royal Hyderabadi Biryani">
+                <div class="gallery-overlay"><span>Royal Dum Biryani</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85" alt="Gourmet Burger">
+                <div class="gallery-overlay"><span>Gourmet Burgers</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=85" alt="Artisan Pizza">
+                <div class="gallery-overlay"><span>Wood-Fired Pizzas</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=85" alt="Indian Curries">
+                <div class="gallery-overlay"><span>Rich Indian Curries</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85" alt="Desserts">
+                <div class="gallery-overlay"><span>Signature Desserts</span></div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=85" alt="Blue Lagoon Mocktail">
+                <div class="gallery-overlay"><span>Refreshing Mocktails</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="reviews-section section-padding">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="section-tag">CUSTOMER LOVE</span>
+            <h2>What Our <span>Guests Say</span></h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"The biryani was incredibly flavorful and the presentation was royal. Definitely a place I would visit again!"</p>
+                    <div class="review-user">
+                        <div class="avatar">A</div>
+                        <div><strong>Arun Kumar</strong><small>Food Lover</small></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Wonderful flavors, serene luxury blue ambiance, and delicious food. The spices were perfectly balanced."</p>
+                    <div class="review-user">
+                        <div class="avatar">S</div>
+                        <div><strong>Sarah M.</strong><small>Happy Guest</small></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"A beautiful place for family meals. The menu has something for everyone. Loved the Gulab Jamun Cheesecake!"</p>
+                    <div class="review-user">
+                        <div class="avatar">R</div>
+                        <div><strong>Rahul</strong><small>Regular Customer</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom mt-0 border-0">
+            <p>© 2026 CMI's Spices. All rights reserved.</p>
+            <p><a href="menu.html" target="_blank" rel="noopener noreferrer" class="text-info text-decoration-none">Order From Menu <i class="bi bi-arrow-up-right"></i></a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Cart Sidebar & Modals -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <div><h3>Your Cart</h3><p id="cartItemLabel" class="mb-0 text-secondary small">0 items</p></div>
+        <button class="close-cart" id="closeCart"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+        <i class="bi bi-bag"></i>
+        <h3>Your cart is empty</h3>
+        <a href="menu.html" target="_blank" rel="noopener noreferrer" class="royal-btn">Explore Menu</a>
+    </div>
+    <div class="cart-bottom" id="cartBottom">
+        <div class="cart-price-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+        <div class="cart-price-row"><span>Delivery Charge</span><strong id="deliveryCharge">₹0</strong></div>
+        <div class="cart-price-row total-row"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+        <button class="royal-btn w-100" id="checkoutBtn">Proceed to Checkout <i class="bi bi-arrow-right"></i></button>
+    </div>
+</aside>
+
+<div class="modal fade" id="checkoutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content checkout-modal">
+            <div class="modal-header">
+                <div><span class="section-tag">FINAL STEP</span><h3>Complete Your Order</h3></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="row g-3">
+                        <div class="col-md-6"><label>Full Name</label><input type="text" name="customerName" required></div>
+                        <div class="col-md-6"><label>Phone Number</label><input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required></div>
+                        <div class="col-md-6"><label>Email</label><input type="email" name="email" required></div>
+                        <div class="col-md-6"><label>City</label><input type="text" name="city" required></div>
+                        <div class="col-12"><label>Delivery Address</label><textarea name="address" rows="2" required></textarea></div>
+                        <div class="col-md-6"><label>Pincode</label><input type="text" name="pincode" pattern="[0-9]{6}" maxlength="6" required></div>
+                        <div class="col-md-6">
+                            <label>Payment Method</label>
+                            <select name="payment" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="Cash on Delivery">Cash on Delivery</option>
+                                <option value="UPI">UPI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkout-summary" id="checkoutSummary"></div>
+                    <button type="submit" class="royal-btn w-100 mt-3">Place Order <i class="bi bi-check-circle"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content success-modal">
+            <div class="success-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <h2>Order Placed!</h2>
+            <div class="order-number" id="orderNumber"></div>
+            <div id="successDetails"></div>
+            <button class="royal-btn w-100 mt-3" data-bs-dismiss="modal">Done</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

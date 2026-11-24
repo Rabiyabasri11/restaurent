@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CMI's Spices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announcement-bar">
+    <span>👩‍🍳 Delicious moments, unforgettable flavors</span>
+    <span class="announcement-right">Open Daily: 11:30 AM – 11:00 PM</span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top main-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" target="_blank" rel="noopener noreferrer">
+            <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" fill="#112240" stroke="#38bdf8" stroke-width="2.5"/>
+                <path d="M32 14C26 22 22 28 32 48C42 28 38 22 32 14Z" fill="#2563eb" stroke="#38bdf8" stroke-width="1.5"/>
+                <circle cx="32" cy="31" r="4" fill="#fbbf24"/>
+            </svg>
+            <span class="brand-text">
+                CMI's <strong>Spices</strong>
+                <small>TASTE THE GOOD LIFE</small>
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" id="menuToggle">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li><a class="nav-link" href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a class="nav-link" href="menu.html" target="_blank" rel="noopener noreferrer">Menu</a></li>
+                <li><a class="nav-link" href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a class="nav-link" href="gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a></li>
+                <li><a class="nav-link active" href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+
+            <button class="cart-nav-btn" id="openCart">
+                <i class="bi bi-bag"></i>
+                <span>Cart</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <a href="menu.html" target="_blank" rel="noopener noreferrer" class="royal-btn nav-order-btn">Order Now</a>
+        </div>
+    </div>
+</nav>
+
+<header class="page-banner">
+    <div class="container">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h1>We'd Love to <span>Hear From You</span></h1>
+        <p>Table reservations, catering inquiries, or special requests—reach out anytime.</p>
+    </div>
+</header>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p class="text-secondary mb-4">Visit us or call ahead for private dining & reservations.</p>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div><strong>Address</strong><span>42 Royal Spice Avenue, Nungambakkam, Chennai 600034</span></div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                        <div><strong>Phone</strong><span>+91 98765 43210</span></div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                        <div><strong>Email</strong><span>hello@cmisspices.com</span></div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="bi bi-clock"></i></div>
+                        <div><strong>Opening Hours</strong><span>Mon – Sun: 11:30 AM – 11:00 PM</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <form class="contact-form" id="contactForm">
+                    <h3 class="mb-4">Send Us a Message</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label>Your Name</label>
+                            <input type="text" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Your Email</label>
+                            <input type="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="col-12">
+                            <label>Subject</label>
+                            <input type="text" name="subject" required placeholder="Table reservation / Catering / Feedback">
+                        </div>
+                        <div class="col-12">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" required placeholder="Write your message..."></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="royal-btn w-100" type="submit">Send Message <i class="bi bi-send"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-placeholder">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h3>Find CMI's Spices</h3>
+            <p class="text-secondary mb-0">42 Royal Spice Avenue, Chennai — Valet Parking Available</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom mt-0 border-0">
+            <p>© 2026 CMI's Spices. All rights reserved.</p>
+            <p><a href="index.html" target="_blank" rel="noopener noreferrer" class="text-info text-decoration-none">Open Home Page <i class="bi bi-arrow-up-right"></i></a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Cart Sidebar, Modals & Toast -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <div><h3>Your Cart</h3><p id="cartItemLabel" class="mb-0 text-secondary small">0 items</p></div>
+        <button class="close-cart" id="closeCart"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+        <i class="bi bi-bag"></i>
+        <h3>Your cart is empty</h3>
+        <a href="menu.html" target="_blank" rel="noopener noreferrer" class="royal-btn">Explore Menu</a>
+    </div>
+    <div class="cart-bottom" id="cartBottom">
+        <div class="cart-price-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+        <div class="cart-price-row"><span>Delivery Charge</span><strong id="deliveryCharge">₹0</strong></div>
+        <div class="cart-price-row total-row"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+        <button class="royal-btn w-100" id="checkoutBtn">Proceed to Checkout <i class="bi bi-arrow-right"></i></button>
+    </div>
+</aside>
+
+<div class="modal fade" id="checkoutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content checkout-modal">
+            <div class="modal-header">
+                <div><span class="section-tag">FINAL STEP</span><h3>Complete Your Order</h3></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="row g-3">
+                        <div class="col-md-6"><label>Full Name</label><input type="text" name="customerName" required></div>
+                        <div class="col-md-6"><label>Phone Number</label><input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required></div>
+                        <div class="col-md-6"><label>Email</label><input type="email" name="email" required></div>
+                        <div class="col-md-6"><label>City</label><input type="text" name="city" required></div>
+                        <div class="col-12"><label>Delivery Address</label><textarea name="address" rows="2" required></textarea></div>
+                        <div class="col-md-6"><label>Pincode</label><input type="text" name="pincode" pattern="[0-9]{6}" maxlength="6" required></div>
+                        <div class="col-md-6">
+                            <label>Payment Method</label>
+                            <select name="payment" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="Cash on Delivery">Cash on Delivery</option>
+                                <option value="UPI">UPI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkout-summary" id="checkoutSummary"></div>
+                    <button type="submit" class="royal-btn w-100 mt-3">Place Order <i class="bi bi-check-circle"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content success-modal">
+            <div class="success-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <h2>Order Placed!</h2>
+            <div class="order-number" id="orderNumber"></div>
+            <div id="successDetails"></div>
+            <button class="royal-btn w-100 mt-3" data-bs-dismiss="modal">Done</button>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container">
+    <div class="custom-toast" id="toast"><i class="bi bi-check-circle-fill"></i><span id="toastMessage">Message sent!</span></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
